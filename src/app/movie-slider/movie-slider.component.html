@@ -1,0 +1,10 @@
+<section class="alignMainSliderContent">
+    <button (click)="displayPreviousMovieData()">&lt;</button>
+    <section class="alignInnerSlideContent">
+        <p>{{items[index].title}}</p>
+        <p width="200px">
+            {{items[index].description}}</p>
+    </section>
+    <img [src]="items[index].image">
+    <button (click)="displayNextMovieData()">&gt;</button>
+</section>

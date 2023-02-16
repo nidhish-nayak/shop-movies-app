@@ -1,0 +1,19 @@
+.align-movie-data {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 1em;
+}
+
+.align-movie-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.align-movie-items:hover {
+    background: rgb(42, 33, 54);
+    border-radius: 0.75rem;
+}

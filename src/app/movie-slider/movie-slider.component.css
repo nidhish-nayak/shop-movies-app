@@ -1,0 +1,10 @@
+.alignMainSliderContent {
+    display: inline-block;
+    vertical-align: top;
+    width: 750px;
+}
+
+.alignInnerSlideContent {
+    display: inline-block;
+    vertical-align: top;
+}
