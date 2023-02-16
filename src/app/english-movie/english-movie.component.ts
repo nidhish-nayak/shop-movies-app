@@ -9,6 +9,7 @@ import { MovieService } from './../movie.service';
 export class EnglishMovieComponent {
   data: any;
   constructor(objService: MovieService) {
+    //dependency inject
     this.data = objService.getMovieData();
   }
 }
