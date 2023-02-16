@@ -1,0 +1,10 @@
+<h2>English Movies</h2>
+<section class="section-english">
+    <div class="posters" *ngFor="let movie of data">
+        <img [src]="movie.posterurl" height="400" width="300">
+        <div class="posters-desc">
+            <p>{{movie.title}}</p>
+            <p>{{movie.imdbRating}}
+        </div>
+    </div>
+</section>

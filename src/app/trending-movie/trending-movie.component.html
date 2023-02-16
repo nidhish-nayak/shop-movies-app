@@ -1,8 +1,13 @@
-<h1>trending-movie works!</h1>
-<div class="align-movie-data">
-    <section *ngFor="let data of movies" class="align-movie-items">
-        <!--Display Images-->
-        <img [src]="data.Poster" alt="Alt-image">
-        {{data.Released}}
-    </section>
-</div>
+<section class="section-trending">
+    <h2>Trending Movies</h2>
+    <div class="align-movie-data">
+        <section *ngFor="let data of movies" class="align-movie-items">
+            <!--Display Images-->
+            <img [src]="data.Poster" [alt]="data.Poster" height="450" width="300">
+            <div class="movie-desc">
+                <p>{{data.Title}}</p>
+                <p>{{data.Year}}</p>
+            </div>
+        </section>
+    </div>
+</section>

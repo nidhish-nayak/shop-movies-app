@@ -1,4 +1,4 @@
-.align-movie-data {
+.section-english {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -7,23 +7,23 @@
     margin: 2em;
 }
 
-.align-movie-items {
+.posters {
     display: flex;
     flex-direction: column;
     padding: 1em;
     cursor: pointer;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: medium;
 }
 
-.movie-desc {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
+.posters:hover {
+    background: rgb(45, 45, 45);
+    border-radius: 0.5rem;
+    /* border: 2px solid grey; */
 }
 
-.align-movie-items:hover {
-    background: rgb(45, 45, 45);
-    border-radius: 0.25rem;
-    /* border: 2px solid grey; */
+.posters-desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0 0;
 }

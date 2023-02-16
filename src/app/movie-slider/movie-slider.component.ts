@@ -17,6 +17,9 @@ export class MovieSliderComponent {
           'A comedy of errors ensues when Anbu falls for his British colleague Jessica. Cultural differences aside, there is a lot more to settle for this couple to unite.',
         image:
           'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3117/1423117-h-2667411eaaab',
+        lang: 'Hindi',
+        genre: 'Comedy',
+        rating: 8.9,
       },
       {
         title: 'Ghum Hai Kisikey Pyaar Meiin',
@@ -24,6 +27,9 @@ export class MovieSliderComponent {
           'Virat grows agitated as Pakhi talks about her hatred towards Savi. Later, Sai puts forth a request to Virat as he tries to apologise to',
         image:
           'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4252/1364252-h-e470328888ed',
+        lang: 'Hindi',
+        genre: 'Drama',
+        rating: 7.6,
       },
       {
         title: 'Yeh Rishta Kya Kehlata Hai',
@@ -31,6 +37,9 @@ export class MovieSliderComponent {
           'The Birlas and the Goenkas shower their blessings on a pregnant Aarohi. In the meantime, Akshara feels insecure since she cannot become a mother.',
         image:
           'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/4266/1364266-h-470552ba960d',
+        lang: 'Hindi',
+        genre: 'Romance',
+        rating: 8.1,
       },
     ];
   } //1,2,3   3->2->1->3  //0,1,2

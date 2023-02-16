@@ -1,10 +1,27 @@
 <section class="alignMainSliderContent">
-    <button (click)="displayPreviousMovieData()">&lt;</button>
+    <button class="my-slider-button" (click)="displayPreviousMovieData()">&lt;</button>
     <section class="alignInnerSlideContent">
-        <p>{{items[index].title}}</p>
-        <p width="200px">
-            {{items[index].description}}</p>
+        <div class="title-wrapper">
+            <h2 class="title">{{items[index].title}}</h2>
+            <div class="main-wrap">
+
+                <div class="genre-wrapper">
+                    <p class="lang">
+                        {{items[index].lang}}
+                    </p>
+                    |
+                    <p class="genre">
+                        {{items[index].genre}}
+                    </p>
+                </div>
+                <div class="rating">IMDB: {{items[index].rating}}</div>
+            </div>
+
+            <p class="desc" width="200px">
+                {{items[index].description}}</p>
+        </div>
+        <img [src]="items[index].image">
     </section>
-    <img [src]="items[index].image">
-    <button (click)="displayNextMovieData()">&gt;</button>
+
+    <button class="my-slider-button" (click)="displayNextMovieData()">&gt;</button>
 </section>

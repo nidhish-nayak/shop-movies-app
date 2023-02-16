@@ -1,5 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #030b17;
     color: whitesmoke;
+}
+
+h2 {
+    font-family: monospace;
+    margin: 4em 2em 1em 2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid white;
 }
