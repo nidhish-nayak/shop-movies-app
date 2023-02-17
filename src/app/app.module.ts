@@ -8,6 +8,7 @@ import { TrendingMovieComponent } from './trending-movie/trending-movie.componen
 import { MovieSliderComponent } from './movie-slider/movie-slider.component';
 import { EnglishMovieComponent } from './english-movie/english-movie.component';
 import { EnglishMovieDetailsComponent } from './english-movie-details/english-movie-details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EnglishMovieDetailsComponent } from './english-movie-details/english-mo
     TrendingMovieComponent,
     MovieSliderComponent,
     EnglishMovieComponent,
-    EnglishMovieDetailsComponent
+    EnglishMovieDetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

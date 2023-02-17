@@ -34,13 +34,17 @@
     font-size: 2rem;
     cursor: pointer;
     padding: 0.25em;
-    border-radius: 5px;
-    font-weight: semi-bold;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: hsl(0, 0%, 10%);
+    transition: transform 250ms ease-in-out;
 }
 
 .my-slider-button:hover {
-    background: rgb(199, 199, 199);
-    scale: 1.1;
+    color: black;
+    background: rgb(212, 212, 212);
+    transform: scale(1.1)
 }
 
 .main-wrap {
