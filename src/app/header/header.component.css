@@ -20,6 +20,7 @@ a {
     padding: 1em;
 }
 
+
 a:hover {
     background: rgb(100, 100, 100);
 }
@@ -49,4 +50,27 @@ a:hover {
 
 .icon-wrapper {
     display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        font-size: small;
+        padding: 0.25em;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Roboto, sans-serif;
+        margin: auto 0.25em;
+        border-radius: 0.5em;
+        padding: 0.25em;
+    }
+
+    .logo {
+        display: flex;
+        padding: 1em;
+        align-items: center;
+        scale: 0.7;
+    }
 }
