@@ -1,8 +1,25 @@
 <section class="section-details">
-    <p>
-        {{ movieData.title | uppercase }} ----
-        {{ movieData.releaseDate | date : "long" | uppercase }}
-    </p>
-    <img [src]="movieData.posterurl" />
-    <p>{{ movieData.storyline }}</p>
+
+    <div class="detail-container">
+        <img class="detail-img" [src]="movieData.posterurl" />
+        <div class="detail-wrapper">
+            <h2 class="main-title">
+                {{ movieData.title | uppercase }}
+            </h2>
+            <div class="detail-title">
+                <p class="time">
+                    {{ movieData.releaseDate | date : "long" | uppercase }}
+                </p>
+                <p class="imdb">IMDB: {{movieData.imdbRating}}</p>
+                <p class="detail-desc">{{ movieData.storyline }}</p>
+                <div class="genre-wrapper">
+                    <p class="title-genre-r">Genre: </p>
+                    <p class="title-genres" *ngFor="let genre of movieData.genres">{{genre}}</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 </section>

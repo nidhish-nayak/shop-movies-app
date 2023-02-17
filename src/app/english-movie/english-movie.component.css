@@ -1,29 +1,33 @@
 .section-english {
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    padding: 0.5em;
-    margin: 2em;
-}
-
-.posters {
-    display: flex;
-    flex-direction: column;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 1em 1em 2em 3em;
     padding: 1em;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-size: medium;
-}
-
-.posters:hover {
-    background: rgb(45, 45, 45);
-    border-radius: 0.5rem;
-    /* border: 2px solid grey; */
 }
 
 .posters-desc {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 0;
+    margin: 1em 0;
+    font-family: Roboto, sans-serif;
+}
+
+.poster-img {
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.posters {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.posters:hover {
+    background: rgb(45, 45, 45);
 }
