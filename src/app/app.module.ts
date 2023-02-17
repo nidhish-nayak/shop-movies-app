@@ -9,6 +9,8 @@ import { MovieSliderComponent } from './movie-slider/movie-slider.component';
 import { EnglishMovieComponent } from './english-movie/english-movie.component';
 import { EnglishMovieDetailsComponent } from './english-movie-details/english-movie-details.component';
 import { HomeComponent } from './home/home.component';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './home/home.component';
     MovieSliderComponent,
     EnglishMovieComponent,
     EnglishMovieDetailsComponent,
-    HomeComponent
+    HomeComponent,
+    MoviesComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

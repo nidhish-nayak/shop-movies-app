@@ -1,6 +1,8 @@
-<section>
-    <!--data {,poster,title,releaseDate,Story Line,averageRating}-->
-    <img [src]="data.posterurl">
-    <p>{{data.title}}</p>
-    <p>{{data.storyline}}</p>
+<section class="section-details">
+    <p>
+        {{ movieData.title | uppercase }} ----
+        {{ movieData.releaseDate | date : "long" | uppercase }}
+    </p>
+    <img [src]="movieData.posterurl" />
+    <p>{{ movieData.storyline }}</p>
 </section>

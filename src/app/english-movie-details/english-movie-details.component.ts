@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MovieService } from './../movie.service';
+import { MovieService } from '../movie.service';
 
 @Component({
   selector: 'app-english-movie-details',
@@ -8,16 +8,20 @@ import { MovieService } from './../movie.service';
   styleUrls: ['./english-movie-details.component.css'],
 })
 export class EnglishMovieDetailsComponent {
-  data: any;
-  title: string = '';
+  movieData: any;
+
+  title = '';
   constructor(
-    private objService: MovieService,
-    private objActivatedRoute: ActivatedRoute
-  ) {}
-  ngOnInit(): void {
-    this.objActivatedRoute.params.subscribe((params) => {
-      this.title = params['title'];
+    private movieService: MovieService,
+    private activatedRoute: ActivatedRoute
+  ) {
+    this.movieData = movieService;
+  }
+
+  ngOnInit() {
+    this.activatedRoute.params.subscribe((params) => {
+      this.title = params['mTitle'];
     });
-    this.data = this.objService.getSelectedMovieData(this.title);
+    this.movieData = this.movieService.getSelectedMovieData(this.title);
   }
 }

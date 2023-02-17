@@ -5,16 +5,19 @@ import MovieData from '../app/english-movie/EnglishMovieData.json';
   providedIn: 'root',
 })
 export class MovieService {
-  private mData: any;
-  private oneMovieData: any;
+  movieData: any;
+  oneMovieData: any;
+
   constructor() {
-    this.mData = MovieData;
+    this.movieData = MovieData;
   }
+
   getMovieData() {
-    return this.mData;
+    return this.movieData;
   }
-  getSelectedMovieData(movieTitle: string): any {
-    for (let movie of this.mData) {
+
+  getSelectedMovieData(movieTitle: any) {
+    for (let movie of this.movieData) {
       if (movie.title == movieTitle) {
         this.oneMovieData = movie;
         break;

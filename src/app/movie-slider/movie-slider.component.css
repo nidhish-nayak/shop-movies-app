@@ -42,8 +42,7 @@
 }
 
 .my-slider-button:hover {
-    color: black;
-    background: rgb(212, 212, 212);
+    background: rgb(85, 85, 85);
     transform: scale(1.1)
 }
 
