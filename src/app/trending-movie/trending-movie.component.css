@@ -1,25 +1,28 @@
 .align-movie-data {
     display: grid;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-    padding: 0.5em;
-    margin: 2em;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 1em 1em 2em 3em;
+    padding: 1em;
 }
 
 .align-movie-items {
     display: flex;
     flex-direction: column;
-    padding: 1em;
     cursor: pointer;
     font-family: Roboto, sans-serif;
     font-size: medium;
+    width: 320px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .movie-desc {
     display: flex;
     justify-content: space-between;
-    margin-top: 1em;
+    margin: 1em 0;
+    font-family: Roboto, sans-serif;
 }
 
 .align-movie-items:hover {

@@ -56,3 +56,21 @@
     padding: 0.25em;
     border-radius: 0.25em;
 }
+
+@media only screen and (max-width: 900px) {
+    .detail-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        border: 2px solid rgb(75, 75, 75);
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .detail-img {
+        height: 50%;
+        width: 50%;
+        border-radius: 5px;
+        margin-left: 3em;
+    }
+}
