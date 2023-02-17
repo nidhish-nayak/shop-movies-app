@@ -67,3 +67,7 @@
 img {
     cursor: pointer;
 }
+
+.rating {
+    color: rgb(225, 206, 0)
+}
